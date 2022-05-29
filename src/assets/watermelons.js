@@ -1,55 +1,55 @@
 const watermelons = [
     {
         mass: 1,
-        isRipe: true
+        isRipe: 'спелая'
     },
     {
         mass: 6,
-        isRipe: false
+        isRipe: "уже сорвано"
     },
     {
         mass: 10,
-        isRipe: true
+        isRipe: "не спелая"
     },
     {
         mass: 7,
-        isRipe: false
+        isRipe: "не спелая"
+    },
+    {
+        mass: 8,
+        isRipe: 'спелая'
     },
     {
         mass: 9,
-        isRipe: false
+        isRipe: 'спелая'
     },
     {
-        mass: 2,
-        isRipe: false
-    },
-    {
-        mass: 2,
-        isRipe: false
+        mass: 17,
+        isRipe: 'спелая'
     },
     {
         mass: 15,
-        isRipe: true
+        isRipe: "не спелая"
     },
     {
         mass: 14,
-        isRipe: true
+        isRipe: "уже сорвано"
     },
     {
         mass: 23,
-        isRipe: false
+        isRipe: "не спелая"
     },
     {
         mass: 12,
-        isRipe: false
+        isRipe: "уже сорвано"
     },
     {
         mass: 10,
-        isRipe: true
+        isRipe: 'спелая'
     },
     {
         mass: 2,
-        isRipe: false
+        isRipe: 'спелая'
     },
 ];
 export default watermelons

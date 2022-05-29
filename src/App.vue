@@ -6,7 +6,7 @@
         <div v-for="(item, index) in watermelons" :style="{backgroundColor: selected.includes(index) ? '#a5b9b9' : ''}" class="watermelon-item" @click="handleWatermelonClick(index)">
           <img src="./assets/watermelon.svg" class="watermelon-icon">
           <div>Масса: {{item.mass}} кг</div>
-          <div>{{item.isRipe ? 'Спелая' : 'Еще не спело'}}</div>
+          <div>{{item.isRipe=== 'спелая' ? 'Спелая' : item.isRipe === 'не спелая' ? 'Еще не спело' : 'Уже сорвано'}}</div>
         </div>
       </div>
       <div v-if="selected.length > 0">
@@ -118,7 +118,7 @@ import watermelons from './assets/watermelons.js'
        }
        if (this.selected.length >= 3) {
           return;
-        } else if (!this.watermelons[index].isRipe) {
+        } else if (this.watermelons[index].isRipe === 'не спелая' || this.watermelons[index].isRipe === 'уже сорвано') {
           return;
         }
         this.totalMass += this.watermelons[index].mass;
